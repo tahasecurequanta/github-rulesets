@@ -1,4 +1,4 @@
-# github-rulesets
+# My Github-Rulesets
 
 Ready-to-import **GitHub Rulesets** that lock down your repository: no direct pushes to `main`, no branch deletion, and no merging a pull request without an approving review.
 
