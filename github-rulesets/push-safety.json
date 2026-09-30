@@ -1,0 +1,18 @@
+{
+  "name": "push-safety",
+  "target": "push",
+  "enforcement": "active",
+  "rules": [
+    { "type": "max_file_size", "parameters": { "max_file_size": 10 } },
+    { "type": "max_file_path_length", "parameters": { "max_file_path_length": 255 } },
+    {
+      "type": "file_extension_restriction",
+      "parameters": { "restricted_file_extensions": [".exe", ".dll", ".pem", ".key", ".p12", ".pfx"] }
+    },
+    {
+      "type": "file_path_restriction",
+      "parameters": { "restricted_file_paths": [".env", "**/.env", "**/secrets/**"] }
+    }
+  ],
+  "bypass_actors": []
+}
